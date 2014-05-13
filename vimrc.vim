@@ -185,9 +185,10 @@ endif
 inoremap <c-u> <c-g>u<c-u>
 inoremap <c-w> <c-g>u<c-w>
 
-"Configure syntastic to use pylint
+"Configure syntastic to use pyflakes
 let g:syntastic_python_checker = 'pyflakes'
 let g:syntastic_check_on_open=1
 
 "Configure syntastic to do perl checking
 let g:syntastic_enable_perl_checker=1
+let g:syntastic_perl_checker = 'perl'
