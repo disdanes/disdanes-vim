@@ -189,3 +189,5 @@ inoremap <c-w> <c-g>u<c-w>
 let g:syntastic_python_checker = 'pyflakes'
 let g:syntastic_check_on_open=1
 
+"Configure syntastic to do perl checking
+let g:syntastic_enable_perl_checker=1
