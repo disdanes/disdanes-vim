@@ -142,6 +142,20 @@ autocmd FileType python setl sw=4                    " shift width is four, yes 
 autocmd FileType python set softtabstop=4            " four!
 
 " ---------------------------------------------------------------------------
+" HTML Stuff
+" ---------------------------------------------------------------------------
+autocmd FileType html setl sw=2
+autocmd FileType html set softtabstop=2
+
+autocmd FileType htmldjango setl sw=2
+autocmd FileType htmldjango set softtabstop=2
+
+autocmd FileType css setl sw=2
+autocmd FileType css set softtabstop=2
+
+autocmd FileType less setl sw=2
+autocmd FileType less set softtabstop=2
+" ---------------------------------------------------------------------------
 " Plugins
 " ---------------------------------------------------------------------------
 filetype on                      " Turn on filetype
@@ -186,7 +200,7 @@ inoremap <c-u> <c-g>u<c-u>
 inoremap <c-w> <c-g>u<c-w>
 
 "Configure syntastic to use pyflakes
-let g:syntastic_python_checker = 'pyflakes'
+let g:syntastic_python_checker = 'flake8'
 let g:syntastic_check_on_open=1
 
 "Configure syntastic to do perl checking
